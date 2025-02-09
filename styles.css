@@ -1,0 +1,293 @@
+*{
+   margin: 0;
+   padding: 0;
+}
+body{
+   font-family: 'Cairo', sans-serif;  
+  color: #f1e426;
+  background-color: black;
+  background-image: 
+      radial-gradient(circle at top left, rgba(255, 215, 0, 0.15), transparent),
+      radial-gradient(circle at bottom right, rgba(255, 215, 0, 0.2), transparent),
+      url('https://www.transparenttextures.com/patterns/dark-wood.png'); /* خشب داكن */
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  font-family: 'Cinzel', serif;
+}
+
+/* تأثير ذهبي متحرك */
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255, 215, 0, 0.1) 10%, transparent);
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* زخرفة ذهبية راقية */
+.decor {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 60px;
+  color: rgba(255, 215, 0, 0.6);
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+  animation: glow 3s infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 10px rgba(255, 215, 0, 0.8); }
+  to { text-shadow: 0 0 20px rgba(255, 215, 0, 1); }
+}
+ 
+header{
+      background-size: cover;
+     background-position: center;
+    background-repeat: no-repeat;
+   height: 500px;
+}
+.adress{
+   text-transform: capitalize;
+   font-size: 3rem;
+   color: #cfc100;
+   text-align: center;
+   padding: 50px;
+   padding-top: 290px;
+   cursor: pointer;
+   width: 700px;
+   margin-left: auto;
+   margin-right: auto;
+   transition: all 0.4s ease-out;
+}
+ 
+.adress:hover{
+     color: #fff130;
+     text-shadow: 4px 4px 25px #f1e426;
+     font-size: 2.5rem;
+    
+ }
+ .lists {
+   display: flex;
+   justify-content: space-between;
+   list-style: none;
+   text-decoration: none;
+   width: 50%;
+   padding: 15px 10px;
+   background: transparent;
+   position: absolute;
+   top: 400px; /* تبقى طبيعية لحد السكرول */
+   left: 0;
+   transition: all 0.3s ease-in-out;
+   margin-top: 400px;
+}
+
+.list {
+   font-size: 20px;
+   text-decoration: none;
+   color: #cfc100;
+   transition: all 0.1s ease-in;
+}
+
+.list:hover {
+   font-size: 22px;
+   text-shadow: 1px 1px 15px #f1e426;
+}
+
+/* لما القائمة تثبت فوق */
+.lists.fixed {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 50%;
+   padding: 10px 20px;
+   
+   z-index: 10000;
+   margin-top: 2px;
+   }
+
+button{
+   font-size: 19px;
+   text-transform: capitalize;
+   width:90px;
+   height: 40px;
+   position: absolute;
+   right: 5px;
+   top: 800px;
+   color: #f1e426;
+   background: #000;
+   border-radius: 35px ;
+   cursor: pointer;
+   transition: all 0.1s ease-in;
+} 
+.but{
+   color: #f1e426;
+   background: #000;
+}
+.but:hover{
+   font-size: 18px;
+
+   text-shadow: 1px 1px 5px #f1e426;
+}
+section{
+   display: flex;
+   justify-content: space-between;
+   margin-top: 100px;
+}
+.aboutus{
+   width: 50%;
+   border-radius: 45px;
+   position: absolute;
+   right: 10px;
+   margin-top: 270px;
+   transform: rotate3d(4, -0.5, 0, 40deg);
+}
+pre{
+    color: #000000;
+    background-color:#f1e326b2;
+    width: 40%;
+    margin-top:250px ;
+    padding: 50px;
+    height:  max-content ;
+    border-radius: 40px;
+   font-size: 20px;
+   box-shadow: 2px 2px 15px #ffffffb2;
+   position: absolute;
+   left: 5px;
+   text-wrap: wrap;
+   transform: rotate3d(4, -0.5, 0, 40deg);
+}
+ 
+.us{
+   color: #cfc100;
+   text-align: center;
+   margin-top: 650px;
+   text-transform: capitalize;
+   font-size: 40px;
+}
+.menuh{
+   font-size: 40px;
+   margin-top: 850px;
+   color: #cfc100;
+   text-align: center;
+   padding-top: 250px;
+}
+.menu{
+    margin-top: 50px;
+    width: 70%;
+    margin-left:  180px;
+    margin-bottom: 100px;
+     
+}
+img{
+  width: 300px;
+  border-radius: 40px;
+  border: 2px solid #ffd700;
+  box-shadow: 2px 2px 15px #ffd700;
+}
+.maindish{
+ display: flex;
+ justify-content: space-between;
+ margin-top: 50px;
+
+}
+.dishcomment{
+  display: flex;
+  color: #f1e426;
+  justify-content: space-between;
+  margin-right: 20px;
+  margin-top: 40px;
+}
+.dish2{
+  width: 250px;
+ }
+.dish1{
+  margin-left: 20px;
+  width: 250px;
+}
+.content{
+   text-align: center;
+   margin-top: 100px;
+
+}
+.visit{
+  margin-top: 50px;
+  margin-left:20px ;
+  text-align: center;
+     
+ }
+ .num{
+  font-size: 32px;
+  margin-top: 100px;
+  text-align: center;
+
+ }
+ .phone{
+  font-size: 25px;
+  text-align: center;
+ }
+ .order{
+   font-size: 25px;
+   background-color: #ff7b008c;
+   width: 300px;
+   position: relative; /* الوضع الافتراضي */
+   left: 10px;
+   border: 1px solid gold;
+   border-radius: 4px;
+   text-align: center;
+   transition: all 0.5s ease; /* تأثير الحركة */
+   }
+   .fixed {
+      position: fixed; /* تثبيت العنصر */
+      bottom: 4px; /* تثبيته من الأعلى */
+      left: 20px; /* يتحرك لليسار عند السكرول */
+    }
+  .wh{
+     text-decoration:none ;
+     transition: all 0.3s ease;
+     color: #000;
+  }
+  .wh:hover{
+     text-shadow: 2px 2px 16px gold;
+     color: gold;
+     font-size: 27px;
+
+  }
+  .footer{
+   background-color: #ffee034b;
+   border-radius: 25px;
+   color: #000;
+   border: solid 2px gold;
+   margin-top: 100px;
+}
+.fixed-menu {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 50%;
+   margin-top: 0;
+   z-index: 1000;
+   border-radius: 20px;
+   background: rgba(0, 0, 0, 0.9);
+   transition: background 0.5s ease-in-out;
+}
+ 
+
+/* زر الرجوع للأعلى */
+#scrollToTop {
+   display: none;
+   position: fixed;
+   bottom: 20px;
+   z-index: 1000;
+   right: 20px;
+   background: rgb(0, 0, 0);
+   padding: 10px 15px;
+   border-radius: 50%;
+   cursor: pointer;
+   transition: opacity 0.3s ease-in-out;
+}
